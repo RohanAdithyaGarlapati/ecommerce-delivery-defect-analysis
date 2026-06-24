@@ -10,7 +10,7 @@ about 2–3 hours the first time.
 
 ---
 
-## PART 0 — Setup (10 min)
+## PART 0: Setup 
 
 1. Download & install **Tableau Public Desktop** from the link above.
 2. Create a free account at https://public.tableau.com (you'll need it to publish).
@@ -19,7 +19,7 @@ about 2–3 hours the first time.
 
 ---
 
-## PART 1 — Connect the data (5 min)
+## PART 1 : Connect the data 
 
 1. Open Tableau Public. On the left under **Connect → To a File**, click **Text file**.
 2. Select `analysis_delivery_performance.csv`. You'll land on the **Data Source** tab.
@@ -42,7 +42,7 @@ about 2–3 hours the first time.
 
 ---
 
-## PART 2 — Create calculated fields (10 min)
+## PART 2: Create calculated fields (10 min)
 
 Do this once; all sheets reuse them. **Analysis menu → Create Calculated Field** for each.
 
@@ -61,7 +61,7 @@ left panel → **Default Properties → Number Format → Percentage** (1 decima
 
 ---
 
-## PART 3 — Build the worksheets
+## PART 3: Build the worksheets
 
 You'll build **9 sheets**, then arrange them into 3 dashboards. Each sheet = one tab at the
 bottom (click the new-sheet icon to add). Name each tab as you go (double-click the tab).
@@ -75,7 +75,7 @@ bottom (click the new-sheet icon to add). Name each tab as you go (double-click 
 
 > Tip: these one-number sheets are your dashboard's "scorecard" across the top.
 
-### Sheet 6 — "On-Time Trend"
+### Sheet 6: "On-Time Trend"
 1. Drag `Purchase Month` to **Columns** (if it's a date, right-click the pill → choose
    **Month** continuous, the green version, so it's a smooth line).
 2. Drag `On-Time Rate` to **Rows**. You get a line.
@@ -85,7 +85,7 @@ bottom (click the new-sheet icon to add). Name each tab as you go (double-click 
    **dual axis** (right-click the second pill → Dual Axis) → set that mark to **Bar** for
    volume context.
 
-### Sheet 7 — "Late Rate by Route" (the centerpiece)
+### Sheet 7: "Late Rate by Route" (the centerpiece)
 1. Drag `Route` to **Rows**.
 2. Drag `Late Rate` to **Columns**. Bars appear.
 3. Sort descending: click the sort icon on the `Route` header.
@@ -94,7 +94,7 @@ bottom (click the new-sheet icon to add). Name each tab as you go (double-click 
 5. Drag `Customer Region` to **Color** so the Northeast/North pattern pops.
 6. This is the visual that shows lateness is a *destination* problem — your headline insight.
 
-### Sheet 8 — "Lateness vs Review Score" (business impact)
+### Sheet 8: "Lateness vs Review Score" (business impact)
 1. Drag `Is Late` to **Columns** (it acts as a 0/1 category — right-click → **Discrete** if
    needed so you get two bars).
 2. Drag `Review Score` to **Rows**, set to **AVG** (click the pill → Measure → Average).
@@ -102,7 +102,7 @@ bottom (click the new-sheet icon to add). Name each tab as you go (double-click 
    "On-Time", 1 = "Late".
 4. Drag `AVG(Review Score)` to **Label** so the 4.29 vs 2.57 shows on the bars.
 
-### Sheet 9 — "Delay Pareto by Region"
+### Sheet 9: "Delay Pareto by Region"
 1. Drag `Customer Region` to **Columns**.
 2. Drag `Order Id` to **Rows** → set to **Count**.
 3. Add a filter: `Is Late` = 1 (drag to Filters, keep only True/1).
@@ -112,24 +112,24 @@ bottom (click the new-sheet icon to add). Name each tab as you go (double-click 
 
 ---
 
-## PART 4 — Assemble the dashboards (30 min)
+## PART 4: Assemble the dashboards (30 min)
 
 Click the **New Dashboard** icon (next to new-sheet, bottom bar). Set **Size → Automatic**
 or a fixed 1200×800.
 
-### Dashboard 1 — "Executive Scorecard"
+### Dashboard 1: "Executive Scorecard"
 - Drag the 5 KPI sheets across the top in a row (use a **Horizontal** layout container).
 - Drag "On-Time Trend" into the center/large area.
 - Title it. This is the leadership glance.
 
-### Dashboard 2 — "Root-Cause Drill-Down"
+### Dashboard 2: "Root-Cause Drill-Down"
 - Drag "Late Rate by Route" large on the left.
 - "Delay Pareto by Region" on the right.
 - Add `Purchase Month` and `Customer Region` as filters (on a sheet, right-click the field →
   **Show Filter**), then make them global: filter dropdown → **Apply to Worksheets → All
   Using This Data Source**.
 
-### Dashboard 3 — "Business Impact"
+### Dashboard 3: "Business Impact"
 - "Lateness vs Review Score" as the hero.
 - Add a **Text** object with your recommendation (the Northeast/North lanes carry ~79% of
   delays; prioritize carrier capacity + estimate recalibration there).
@@ -140,7 +140,7 @@ or a fixed 1200×800.
 
 ---
 
-## PART 5 — Polish (20 min)
+## PART 5: Polish (20 min)
 
 - **Titles & captions:** every sheet and dashboard gets a clear title.
 - **Color:** use one consistent accent (Tableau's "Orange-Blue Diverging" reads well for
@@ -152,7 +152,7 @@ or a fixed 1200×800.
 
 ---
 
-## PART 6 — Publish & get your shareable link (10 min)
+## PART 6: Publish & get your shareable link (10 min)
 
 1. **File → Save to Tableau Public As…** → sign in → name it
    *"Olist Delivery Performance & Root-Cause Analysis."*
