@@ -1,4 +1,4 @@
-# 🧭 Tableau Step-by-Step Guide (Beginner-Friendly)
+# Tableau Build Guide
 
 This walks you from zero to a **published, shareable Tableau dashboard** using
 `data/analysis_delivery_performance.csv`. No prior Tableau experience assumed. Budget
@@ -85,7 +85,7 @@ bottom (click the new-sheet icon to add). Name each tab as you go (double-click 
    **dual axis** (right-click the second pill → Dual Axis) → set that mark to **Bar** for
    volume context.
 
-### Sheet 7 — "Late Rate by Route" ⭐ (the centerpiece)
+### Sheet 7 — "Late Rate by Route" (the centerpiece)
 1. Drag `Route` to **Rows**.
 2. Drag `Late Rate` to **Columns**. Bars appear.
 3. Sort descending: click the sort icon on the `Route` header.
@@ -171,7 +171,7 @@ or a fixed 1200×800.
 
 ---
 
-## ✅ Done-check
+## Completion Checklist
 
 You should now have:
 - [ ] A published Tableau Public dashboard with a public URL
