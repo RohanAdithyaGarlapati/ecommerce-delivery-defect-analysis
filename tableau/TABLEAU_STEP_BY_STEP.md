@@ -66,7 +66,7 @@ left panel → **Default Properties → Number Format → Percentage** (1 decima
 You'll build **9 sheets**, then arrange them into 3 dashboards. Each sheet = one tab at the
 bottom (click the new-sheet icon to add). Name each tab as you go (double-click the tab).
 
-### Sheet 1 — "KPI: On-Time Rate" (a big-number tile)
+### Sheet 1: "KPI: On-Time Rate" (a big-number tile)
 1. Double-click `On-Time Rate` → it appears on the **Text** card / as a number.
 2. From the top menu, set the mark type to **Text** (Marks card dropdown).
 3. Make it big: click **Text** on the Marks card → resize font to ~40pt.
