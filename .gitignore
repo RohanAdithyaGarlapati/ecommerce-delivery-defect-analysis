@@ -1,0 +1,32 @@
+# --- Raw Olist source data (download from Kaggle, don't commit) ---
+# These are large and publicly available; keep the repo lightweight.
+data/olist_orders_dataset.csv
+data/olist_order_items_dataset.csv
+data/olist_order_payments_dataset.csv
+data/olist_order_reviews_dataset.csv
+data/olist_products_dataset.csv
+data/olist_customers_dataset.csv
+data/olist_sellers_dataset.csv
+data/olist_geolocation_dataset.csv
+data/product_category_name_translation.csv
+
+# Keep: data/analysis_delivery_performance.csv (the engineered output powers the dashboard)
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- Tableau temp/backup files ---
+*.twbr
+*.twb.bak
+Book*.twb
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
