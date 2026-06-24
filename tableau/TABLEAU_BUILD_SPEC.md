@@ -40,9 +40,7 @@ GMV                 = SUM([Order Price])
 
 ---
 
-## Dashboard 1 — Executive Delivery Scorecard
-
-Purpose: the weekly leadership glance. No drill-down, just health.
+## Dashboard 1: Executive Delivery Scorecard
 
 1. **KPI tiles (BANs)** — 5 text sheets, large number:
    - On-Time Rate (format %) — target reference line at 90%
@@ -58,7 +56,7 @@ Layout: tiles across the top, trend chart center, map right.
 
 ---
 
-## Dashboard 2 — Root-Cause Drill-Down (the centerpiece)
+## Dashboard 2: Root-Cause Drill-Down (the centerpiece)
 
 Purpose: answer *why* deliveries are late. This is the Dive Deep dashboard.
 
@@ -71,7 +69,7 @@ Add a **`purchase_month` range filter** and **`customer_region` filter**, applie
 
 ---
 
-## Dashboard 3 — Business Impact
+## Dashboard 3: Business Impact
 
 Purpose: translate the defect into money/CX language. Deliver Results.
 
@@ -80,18 +78,9 @@ Purpose: translate the defect into money/CX language. Deliver Results.
 3. **Scatter: delivery gap vs review** — bin `delivery_gap_days`, plot avg review per bin → shows the cliff once you cross the estimate.
 4. **Freight ratio context** — late vs on-time avg `freight_ratio`, secondary signal.
 
-End with a **text annotation** stating the recommendation: prioritize carrier capacity and delivery-estimate recalibration on lanes **into the Northeast and North** (South→Northeast, Southeast→Northeast, Southeast→North), since Southeast + Northeast destinations carry ~79% of all delays.
+recommendation: prioritize carrier capacity and delivery-estimate recalibration on lanes **into the Northeast and North** (South→Northeast, Southeast→Northeast, Southeast→North), since Southeast + Northeast destinations carry ~79% of all delays.
 
 ---
 
-## Interactivity to wire up
 
-- Dashboard actions: clicking a `route` bar (D2) filters D3 to that route.
-- `purchase_month` as a global filter across all three dashboards (right-click → Apply to Worksheets → All Using This Data Source).
-- Tooltips: on the route bar, show orders, late rate, avg delivery days, avg review.
 
----
-
-## Publishing (mirrors the JD)
-
-Publish to **Tableau Public** for your portfolio link. In your resume/LinkedIn, frame it as "published an operational delivery dashboard" — which maps directly to the JD's *"publishing via QuickSight, email, or Excel."* Note in interviews that QuickSight is Amazon's internal equivalent and the same dashboard concepts transfer 1:1.
